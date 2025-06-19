@@ -1,5 +1,10 @@
 # radio-pakistan
-An app that plays Pakistani radio over internet. 
 
+A React-based application that streams Pakistani radio stations. This project was initialized with a basic React setup.
 
-#App has pretty caliming UI and gives nostalgic feels to Pakistani Diaspora. 
+## Available Scripts
+
+- `npm start` - Start the development server.
+- `npm run build` - Build the production bundle.
+- `npm run lint` - Lint the source code.
+
