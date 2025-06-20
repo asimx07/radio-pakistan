@@ -1,0 +1,29 @@
+/* Global styles for Radio Pakistan */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap");
+
+:root {
+  --primary-bg: #f0efe9;
+  --accent: #814c39;
+  --text-color: #333;
+  --font-main: 'Noto Nastaliq Urdu', serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  text-align: center;
+}
+
+header {
+  background-color: var(--accent);
+  color: white;
+  padding: 1rem;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
