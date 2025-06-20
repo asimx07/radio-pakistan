@@ -56,7 +56,7 @@ function App() {
       </ul>
       <audio ref={audioRef} style={{ display: 'none' }} />
       {current !== null && (
-        <div>
+        <div className="now-playing">
           <p>Now playing: {stations[current].name}</p>
           <button onClick={togglePlay}>{playing ? 'Pause' : 'Play'}</button>
           <input
