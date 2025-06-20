@@ -1,6 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import stations from './data/stations';
-import logo from '../assets/images/vintage-radio.svg';
+import React, { useState, useRef, useEffect } from "react";
+import stations from "./data/stations";
 
 function App() {
   const [current, setCurrent] = useState(null);
@@ -44,25 +43,22 @@ function App() {
 
   return (
     <div className="App">
-      <header className="app-header">
-        <img src={logo} className="logo" alt="Radio logo" />
-        <h1>Radio Pakistan</h1>
-      </header>
+      <h1>Radio Pakistan</h1>
       <ul>
         {stations.map((s, i) => (
           <li key={i} className="station">
             {s.name}
             <button onClick={() => selectStation(i)}>
-              {current === i && playing ? 'Pause' : 'Play'}
+              {current === i && playing ? "Pause" : "Play"}
             </button>
           </li>
         ))}
       </ul>
-      <audio ref={audioRef} style={{ display: 'none' }} />
+      <audio ref={audioRef} style={{ display: "none" }} />
       {current !== null && (
-        <div className="now-playing">
+        <div>
           <p>Now playing: {stations[current].name}</p>
-          <button onClick={togglePlay}>{playing ? 'Pause' : 'Play'}</button>
+          <button onClick={togglePlay}>{playing ? "Pause" : "Play"}</button>
           <input
             className="volume"
             type="range"
