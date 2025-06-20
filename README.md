@@ -2,6 +2,15 @@
 
 A React-based application that streams Pakistani radio stations. The interface is simple and nostalgic for the Pakistani diaspora. This project was initialized with a basic React setup.
 
+## Table of Contents
+- [Available Scripts](#available-scripts)
+- [Development](#development)
+- [Production Build](#production-build)
+- [Updating the station list](#updating-the-station-list)
+- [Usage](#usage)
+- [Customizing the Look](#customizing-the-look)
+- [Troubleshooting audio playback](#troubleshooting-audio-playback)
+
 ## Available Scripts
 - `npm start` - Start the development server.
 - `npm run build` - Build the production bundle.

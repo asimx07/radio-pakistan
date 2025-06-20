@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import stations from './data/stations';
+import React, { useState, useRef, useEffect } from "react";
+import stations from "./data/stations";
 
 function App() {
   const [current, setCurrent] = useState(null);
@@ -49,16 +49,16 @@ function App() {
           <li key={i} className="station">
             {s.name}
             <button onClick={() => selectStation(i)}>
-              {current === i && playing ? 'Pause' : 'Play'}
+              {current === i && playing ? "Pause" : "Play"}
             </button>
           </li>
         ))}
       </ul>
-      <audio ref={audioRef} style={{ display: 'none' }} />
+      <audio ref={audioRef} style={{ display: "none" }} />
       {current !== null && (
         <div>
           <p>Now playing: {stations[current].name}</p>
-          <button onClick={togglePlay}>{playing ? 'Pause' : 'Play'}</button>
+          <button onClick={togglePlay}>{playing ? "Pause" : "Play"}</button>
           <input
             className="volume"
             type="range"
